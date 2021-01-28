@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Roboto:wght@500&display=swap');
+
+
+body{
+    margin: 0px;
+    height: auto;
+    font-family: 'Hachi Maru Pop', cursive;
+    margin: 0;
+    background-color: #f7e094;
+    
+}
+html{
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    background-color:#bf94f7;
+}
+
+#landing{
+    background-color: antiquewhite;
+}
+
+#landing h1{
+    margin: 0;
+    font-weight: 400;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+#landing h2{
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+#landing-text{
+    /* to make things flex you need a parent container (div landing-text) */
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+/* to put the content in the center */
+    text-align: center;
+}
+
+#landing-image{
+    background-image: url("../images/doruk-yemenici-7H8m9xDfIkY-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+.btn{
+    padding: 0.5rem;
+    border: 1px #ccc solid;
+    /* border radius gives it a circular border*/
+    border-radius: 50px;
+    background-color: #407a66;
+    color: cornsilk;
+    margin: 10px;
+    text-decoration: none;
+    transition: background 1000ms ease;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color:#a3a398;
+    color: black;
+}
+
+#header{
+    background-color: grey;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+img{ 
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.caption{
+    text-align: center;
+    margin: 0px;
+}
+
+.caption h3 p{
+    margin: 0px;
+}
+footer{
+    text-align: center;
+    background-color: antiquewhite;
+    font-weight: bold;
+    padding:8px;
+}
+
+
+.block{
+    width: 33.3%;
+    box-sizing: border-box;
+    float: left;
+    height: 300px;
+    border: 1px solid blue;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    
+}
+
+/* .block is no longer being used */
+
+
+#pcontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+#block1{
+    flex:1;
+    order: 1;
+    background-color: red;
+    padding: 10px;
+}
+
+#block2{
+    flex:1;
+    order: 1;
+    background-color:blue;
+    padding: 10px;
+
+}
+
+#block3{
+    flex:1;
+    order: 1;
+    background-color: green;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* copied from last websites style.css */
+.myform{
+    
+    padding: 20px;
+}
+
+
+
+.myform input[type="text"], .myform input[type="tel"], .myform input[type="email"], .myform textarea
+{
+    padding: 5px;
+    width: 70%;
+    
+}
+
+#addressdiv{
+    width: 30%;
+    float: left;
+    padding: 25px 10px;
+    text-align: center;
+}
+#contact{
+    text-align: center;
+}
+#formdiv{ 
+    width: 70%;
+    float:left;
+    text-align: center;
+}
+.fixbtn{
+    position: fixed;
+    top: 300px;
+    /* left: 2.5%; */
+    margin-left: -100px;;
+}
+
+#logo{
+    position: absolute;
+    top: 30px;
+    margin-left: 30px;
+    width: 80px; 
+    height: auto;
+}
+
+
+/* media query for responsive web design */
+/* @ is a command symbol, it tells the browser to do something */
+@media screen and (max-width:700px)
+{
+    /* body{
+        /* this makes the screen display nothing if the screen width is less than the specified max-width */
+        /* display: none; 
+    } */
+    /* .block, #formdiv, #addressdiv{
+        width: 100%;
+        float: none;
+        text-align: center;
+        height: 300px;  
+    } */
+
+   
+    .fixbtn{
+        position: fixed;
+        top: 300px;
+        /* left: 2.5%; */
+        margin-left: -60px;;
+    }
+
+    #logo{
+        position: absolute;
+        top: 10px;
+        margin-left: 10px;
+        width: 10%;
+        height: auto;
+    }
+    #landing h1{
+        margin: 0px;
+        font-weight: 400;
+        font-size: 2rem;
+        text-transform: uppercase ;
+
+    }
+
+
+}
